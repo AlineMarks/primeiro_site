@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index (request):
-    return HttpResponse("Você está no index do APP!")
+    return render (request, 'arquivo/index.html', context = {'name': 'Aline Costa'})
